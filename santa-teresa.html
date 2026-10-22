@@ -11,8 +11,53 @@
 .kicker{color:#a76d44;font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.section{padding:70px 0}.section h2{font:500 clamp(30px,4vw,46px)/1.1 Georgia,serif;letter-spacing:-.025em;color:var(--navy);margin:8px 0 18px}.section h3{font:500 25px/1.2 Georgia,serif;color:var(--navy);margin:8px 0}.section-intro{max-width:600px;color:var(--muted);font-size:14px;margin:0}.btn{display:inline-flex;align-items:center;gap:10px;background:var(--sand);color:var(--navy);padding:13px 19px;border-radius:3px;font-size:13px;font-weight:750;border:0;cursor:pointer}.hero-country{min-height:500px;border-radius:8px;overflow:hidden;position:relative;display:flex;align-items:flex-end;color:white;background:linear-gradient(90deg,rgba(9,31,48,.78),rgba(9,31,48,.12)),linear-gradient(0deg,rgba(8,27,43,.55),transparent 62%),url('assets/costa-rica-home.png') center/cover}.hero-inner{padding:clamp(28px,6vw,70px);max-width:800px}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#e9c6a9;font-weight:700}.hero-country h1{font-family:Georgia,serif;font-weight:500;letter-spacing:-.035em;font-size:clamp(44px,7vw,78px);line-height:1.02;margin:16px 0}.hero-country p{max-width:620px;font-size:17px;color:#f1f5f7;margin:0 0 26px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.intro-image{min-height:380px;border-radius:5px;background-size:cover;background-position:center}.santa-story-image{background-image:url('assets/pura-vida.jpg')}.experience-panel{background:#F4EFE5}.experience-cards .card{background:#fffdf8;border-color:#e8dcc7}.experience-icon{font-size:30px;color:#a76d44;display:block;margin-bottom:8px}.copy p{color:var(--muted);font-size:15px}.story-panel{background:var(--mist)}.story-panel .section{padding:66px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:6px;overflow:hidden}.card-photo{height:190px;background-size:cover;background-position:center}.card-body{padding:22px}.card-body p{color:var(--muted);font-size:14px;margin:8px 0}.tag{display:inline-block;color:#a76d44;font-size:10px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.sand-panel{background:var(--sand);padding:clamp(24px,4vw,42px);border-radius:6px}.note{font-size:12px;color:var(--muted);margin-top:18px}.back-link{display:inline-block;color:var(--blue);font-size:13px;font-weight:750;margin:12px 0 20px}.footer{padding:28px 0;color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
 @media(max-width:760px){.links{gap:13px;font-size:12px}.nav{height:70px}.hero-country{min-height:460px}.intro-grid{grid-template-columns:1fr;gap:24px}.intro-image{min-height:270px}.cards{grid-template-columns:1fr}.card-photo{height:230px}.section{padding:52px 0}.footer-inner{display:block}.footer-inner span{display:block;margin-top:8px}}
 @media(max-width:420px){.wrap{width:min(100% - 26px,1160px)}.brand{font-size:12px}.links{gap:10px}.hero-country h1{font-size:44px}.hero-country p{font-size:15px}}
+
+/* Ajustements responsive avant publication */
+@media (max-width: 760px) {
+  .wrap { width: calc(100% - 32px); }
+  .nav { height: auto; min-height: 70px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; align-items: flex-start; }
+  .brand { max-width: 100%; font-size: 13px; }
+  .brand span { font-size: 8px; letter-spacing: .16em; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 14px; max-width: 100%; }
+  .hero, .hero-country { min-height: clamp(390px, 72svh, 500px); border-radius: 5px; background-position: center; }
+  .hero-inner { padding: 28px 22px; }
+  .hero h1, .hero-country h1 { font-size: clamp(35px, 9.5vw, 58px); line-height: 1.04; overflow-wrap: anywhere; }
+  .hero p, .hero-country p { max-width: 100%; font-size: 15px; }
+  .section { padding: 48px 0; }
+  .section-head { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  .intro-grid, .excursion-grid, .map-box, .story-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .intro-image, .story-image { min-height: 250px; }
+  .destinations, .places, .cards { grid-template-columns: minmax(0, 1fr); }
+  .photo, .place-photo, .card-photo { height: clamp(210px, 60vw, 300px); }
+  .quickfacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sand-panel, .map-box { padding: 22px; }
+  .card-body, .place-body, .dest-body { padding: 18px; }
+  .dest-body h3, .place-body h3 { font-size: 25px; }
+  .map-art { min-height: 210px; }
+  .footer-inner { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer-inner span { display: block; margin-top: 0; }
+  .btn { max-width: 100%; white-space: normal; }
+}
+@media (max-width: 480px) {
+  .wrap { width: calc(100% - 28px); }
+  .hero, .hero-country { min-height: 400px; }
+  .hero-inner { padding: 24px 18px; }
+  .hero h1, .hero-country h1 { font-size: clamp(33px, 10vw, 44px); }
+  .eyebrow { font-size: 10px; letter-spacing: .14em; }
+  .section h2 { font-size: clamp(29px, 8vw, 36px); }
+  .section h3 { font-size: 23px; }
+  .quickfacts { gap: 8px; }
+  .fact { padding: 12px; }
+  .fact strong { font-size: 17px; }
+  .newsletter { padding: 46px 16px; }
+  .country-list { gap: 7px; }
+  .country { padding: 8px 10px; }
+  .globe { font-size: 54px !important; }
+}
+
 </style></head><body>
-<header class="wrap nav"><a class="brand" href="index.html">THE FRENCH TRAVELER<span>TRAVEL STORIES · PHOTOGRAPHY · GUIDES</span></a><nav class="links" aria-label="Navigation principale"><a href="costa-rica.html">Costa Rica</a><a href="#environs">Explorer les environs</a><a href="#adresses">Bonnes adresses</a><a href="#hebergement">Hébergement</a></nav></header>
+<header class="wrap nav"><a class="brand" href="index.html">THE FRENCH TRAVELER<span>TRAVEL STORIES · PHOTOGRAPHY · GUIDES</span></a></header>
+
 <main>
 <div class="wrap"><a class="back-link" href="costa-rica.html">← Retour au carnet du Costa Rica</a>
 <section class="hero-country"><div class="hero-inner"><div class="eyebrow">Carnet de voyage · Côte Pacifique</div><h1>Santa Teresa,<br>mon coup de cœur.</h1><p>Découvert en 2019 lors d’un surf camp, Santa Teresa est devenu une étape incontournable de mes passages au Costa Rica. Ici, je partage ce que j’aime dans ce petit coin de paradis, mes idées d’activités et mes bonnes adresses.</p></div></section>
